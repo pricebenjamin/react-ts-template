@@ -10,6 +10,10 @@
     "preview": "vite preview",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*": "prettier --check --ignore-unknown",
+    "*.(js|jsx|ts|tsx)": "eslint"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
